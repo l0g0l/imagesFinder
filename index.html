@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>PixabayFinder</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Pictures Pixabay Finder</h1>
+
+    </div>
+
+    <div class="containerform">
+        <form action="" id="form" class="form">
+            <div class="divflex">
+                <div class="label">
+                    <label for="" class="tex-form"></label>
+                </div>
+
+                <div class="inputsearch">
+                    <div class="input">
+                        <input type="text" placeholder="Searching...For Example: Coffe" id="word" class="input-form"  autocomplete="off"/>
+
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-btn"><img src="./img/buscar.png" alt="icono lupa"
+                                class="img"></button>
+
+                    </div>
+                </div>
+
+
+        </form>
+        <div id="totalImages" class="totalImages"></div>
+
+        <div id="result" class="result-cards"></div>
+
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
