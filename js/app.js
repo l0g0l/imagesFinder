@@ -13,6 +13,10 @@ let actualPage = 1 // la primera vez que llamemos a la API serán los docs de la
 // registramos el submit para el formulario y lo validamos
 window.onload = () => {
     form.addEventListener('submit', validationForm)
+
+    //llamando a la función aquí lo que hago es que nada más cargar la página se muestren las imágenes de la categoría que le pase por parámetro
+    searchImages('nature')
+
 }
 
 
@@ -31,7 +35,7 @@ function validationForm(e) {
     }
 
     //una vez pasa la validación, llamamos a la función de buscar imágenes
-    searchImages()
+    searchImages(wordSearch)
 }
 
 
@@ -61,10 +65,7 @@ function showAlert(message) {
 
 
 // llamamos a la API 
-function searchImages() {
-
-    // recogemos el valor del input
-    const word = document.querySelector('#word').value
+function searchImages(word) {
 
     const key = '22854173-b9a58ddc094b31ac018df9dda';
     // a la url le pasamos la key, lo que el ususario ha metido en el input, las imagenes por pagina y el comienzo de la paginación
@@ -198,3 +199,11 @@ function printPagination() {
     }
 
 }
+
+/* scroll infinito
+window.addEventListener('scroll', () =>  {
+    if(window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
+        showImages()
+    }
+})
+ */

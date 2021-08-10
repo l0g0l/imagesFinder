@@ -1,7 +1,7 @@
 # New Document<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<h4 align="center">PixabayFinder</h4>
+<h4 align="center">ImagesFinder</h4>
   <p align="center">
     <a href="https://githubrepositoryfinder.herokuapp.com/">View Web Application</a>
   </p>
