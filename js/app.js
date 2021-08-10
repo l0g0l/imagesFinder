@@ -43,11 +43,13 @@ function showAlert(message) {
     // le ponemos el if para indicar que, si no existe alerta, porque si no metes en un if, crear tantas alertas como veces le des al botón  de search
 
     if (!alertExist) {
-        const alert = document.createElement('p');
+        const alert = document.createElement('div');
         alert.classList.add('alert')
+        alert.setAttribute("role", "alert")
+        
 
         alert.innerHTML = `
-            <span class="span">Error! ${message}</span>
+            <strong class="span">Error! ${message}</strong>
         `;
         form.appendChild(alert);
 
@@ -124,19 +126,19 @@ function showImages(images) {
 
     // iteramos sobre el arreglo de imagenes con un forEach porque no necesito un neuvo array, por eso no uso un map y construimos el HTML
     images.forEach(item => {
-        const { previewURL, likes, views, largeImageURL } = item;
+        const { previewURL, likes, views, largeImageURL, tags } = item;
 
         result.innerHTML += `
       
         <div class="containerimg">
             <div class="divimg">
-                <img class="img-card" src=${previewURL}>
+                <img class="img-card" src=${previewURL} alt=${tags}>
             </div>
             <div class="divtext">
                 <p > ${likes} <span class="light">Likes</span> </p>
                 <p > ${views} <span class="light">Times see</span> </p>
             <div class="link-btn">
-            <a href="${largeImageURL}" target="_blank" rel="noopener noreferrer" class="link"> Image </a>
+            <a href="${largeImageURL}" target="_blank" rel="noopener noreferrer" class="link" > Image </a>
 
             </div>
 

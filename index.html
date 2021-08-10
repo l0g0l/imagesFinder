@@ -9,31 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>PixabayFinder</title>
 </head>
 
-<body>
-    <div class="title">
-        <h1>Pictures Pixabay Finder</h1>
-
-    </div>
-
+<body class="background">
+    <header>
+        <div class="title">
+            <h1>Pictures Pixabay Finder</h1>
+    
+        </div>
+    </header>
+  
+<main>
     <div class="containerform">
         <form action="" id="form" class="form">
             <div class="divflex">
                 <div class="label">
-                    <label for="" class="tex-form"></label>
+                    <label for="word" class="visuallyhidden"></label>
                 </div>
 
                 <div class="inputsearch">
                     <div class="input">
-                        <input type="text" placeholder="Searching...For Example: Coffe" id="word" class="input-form"  autocomplete="off"/>
+                        <input type="text" placeholder="Searching...For Example: Coffe" id="word" class="input-form"  autocomplete="off" required aria-required="true" autofocus/>
 
                     </div>
                     <div>
                         <button type="submit" class="submit-btn"><img src="./img/buscar.png" alt="icono lupa"
-                                class="img"></button>
+                                class="img" ></button>
 
                     </div>
                 </div>
@@ -46,8 +49,10 @@
 
         <div id="pagination" class="pagination"></div>
     </div>
+</main>
+   
 
-    <script src="./app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
