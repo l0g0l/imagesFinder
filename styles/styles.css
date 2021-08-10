@@ -48,7 +48,7 @@ button:focus {
 .input-form {
   outline: none;
   border: unset;
-  width: 304px;
+  width: 300px;
   font-size: 20px;
   padding-left: 10px;
   background-color: transparent;
@@ -135,26 +135,24 @@ p {
 
 /*Media Queries*/
 
-   /* Media Query for Tablets Ipads portrait mode */
-   @media (min-width: 768px) and (max-width: 1024px){
-    .inputsearch {
-      width: 372px;
-      margin-left: 86px;
-    }
-    .totalImages {
-      margin-left: 86px;
-    
-    }
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .inputsearch {
+    width: 372px;
+    margin-left: 86px;
+  }
+  .totalImages {
+    margin-left: 86px;
+  }
 }
-  
+
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 2000px){
+@media (min-width: 1025px) and (max-width: 2000px) {
   .inputsearch {
     width: 372px;
     margin-left: 100px;
   }
   .totalImages {
     margin-left: 100px;
-  
   }
-} 
+}
