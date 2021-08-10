@@ -50,7 +50,7 @@ function showAlert(message) {
         const alert = document.createElement('div');
         alert.classList.add('alert')
         alert.setAttribute("role", "alert")
-        
+
 
         alert.innerHTML = `
             <strong class="span">Error! ${message}</strong>
