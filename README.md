@@ -6,20 +6,20 @@
     <a href="https://l0g0l.github.io/imagesFinder/">View Web Application</a>
   </p>
   <p align="center">
-<img src="https://www.codefactor.io/repository/github/l0g0l/buscadorrepos_frontend/badge" alt="Codefactor Grade">
+<img src="https://www.codefactor.io/repository/github/l0g0l/imagesfinder/badge/main" alt="Codefactor Grade">
 </p>
 <p align="center">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_buscadorRepos_FrontEnd&metric=alert_status" alt="Sonar Quality Gate"></p>
+<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_imagesFinder&metric=alert_status
+" alt="Sonar Quality Gate"></p>
 
 <p align="center">
-<img src="public/images/accesibilityTest.png" alt="Accesibility test"></p>
+<img src="img/accesibility.png" alt="Accesibility test" width="400"></p
 </p>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#learn-more">Learn More</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#installation">Installation</a></li>
     <li><a href="#about-the-project">About The Project</a></li>
@@ -28,16 +28,6 @@
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
-## Learn more
-
-To be more familiar with the libraries and frameworks I have mainly used I will leave a short explanation here:
-
-### [React-router](https://reactrouter.com/)
-
-npm i react-router-dom
-
-React Router is a collection of navigational components that compose declaratively with your application. Whether you want to have bookmarkable URLs for your web app or a composable way to navigate in React Native, React Router works wherever React is rendering--so take your pick!  
 
 
 ### Prerequisites
