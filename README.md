@@ -3,7 +3,7 @@
 <p align="center">
 <h4 align="center">Images Finder</h4>
   <p align="center">
-    <a href="https://githubrepositoryfinder.herokuapp.com/">View Web Application</a>
+    <a href="https://l0g0l.github.io/imagesFinder/">View Web Application</a>
   </p>
   <p align="center">
 <img src="https://www.codefactor.io/repository/github/l0g0l/buscadorrepos_frontend/badge" alt="Codefactor Grade">
@@ -88,16 +88,24 @@ Creation of a Images finder
 
 ## App Overview  
 
-<img src="public/images/GithubRepositoryFinder.gif" alt="view complete aplication " >
+##### Desktop
+
+<img src="img/desktop.png"  alt="desktop view">
+
+<br>
+<br>  
+
+##### Tablet
+
+<img src="img/tablet.png"  alt="tablet view">
+
 
 <br>
 <br>
 
+##### Moblie
 
-
-<br>
-<br>
-
+<img src="img/mobile.gif  "  alt="mobile view">
 <br>
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -105,7 +113,7 @@ Creation of a Images finder
 ## Languages and Tools:
 
 
-The project is deployed in [Heroku](https://www.heroku.com/)  
+The project is deployed in [GitHub Pages](https://pages.github.com/)  
 <br>
 
 <p align="left">
@@ -119,8 +127,8 @@ The project is deployed in [Heroku](https://www.heroku.com/)
     <a href="https://git-scm.com/" target="_blank">
         <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
     </a>
-       <a href="https://www.heroku.com/home" target="_blank">
-        <img src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png" alt="heroku" width="40" height="40"/>
+       <a href="https://pages.github.com/" target="_blank">
+        <img src="img/githubLetras.svg" alt="githubPages" width="40" height="40"/>
     </a>
     
 </p>

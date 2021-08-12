@@ -3,9 +3,9 @@ const form = document.querySelector('#form');
 const paginationDiv = document.querySelector('#pagination');
 const totalImages = document.querySelector('#totalImages');
 
-
 const docsPerPage = 40; // imágenes por página
 let totalPages; // almacena el num de paginas por categoría
+let totalPages2;
 let iterador;
 let actualPage = 1 // la primera vez que llamemos a la API serán los docs de la pag 1
 
@@ -83,11 +83,9 @@ function searchImages(word) {
             showImages(result.hits, result.totalHits);
 
         })
-
 }
 
 // Creamos un GENERADOR (se pone el asterisco antes del nombre de la función) que va a calcular la cantidad de elementos de acuerdo a la páginas que haya. Iterará todos los docs hasta llegar al final
-
 function* createPagination(page) {
     for (let i = 1; i <= page; i++) {
         // con yield lo que hacemos es guardar los valores de la iteración para mostrar las páginas que luego utilizaremos en printPages iterador = createPagination (totalPages)
@@ -144,26 +142,23 @@ function showImages(images) {
             </div>
 
             </div>
-          
-
-        </div>
-    `
-
+        </div>` 
 
     })
 
-    // limpiar paginador previo
 
+    // limpiar paginador previo
     while (paginationDiv.firstChild) {
         paginationDiv.removeChild(paginationDiv.firstChild)
     }
 
-    //generamos el nuevo HTML
 
+    //generamos el nuevo HTML
     printPagination()
 }
 
 function printPagination() {
+
     // de primeras en el console.log vemos que en GENERADOR aparece como suspended, esto es así orque hacen lo que tienen que hacer y luego se duermen. Para despertarlo añadimos .next()
     iterador = createPagination(totalPages);
 
@@ -184,9 +179,10 @@ function printPagination() {
         button.textContent = value;
         button.classList.add('btn');
 
-        // para navegar entre páginas a través de la paginación
 
+        // para navegar entre páginas a través de la paginación
         button.onclick = () => {
+
             // en esta variable almacenamos el valor del boton de la paginación que cliquemos, por default hemos inicializado la variable actualPage en 1 y en la url le hemos indicado que comience mostrando la 1
             actualPage = value
 

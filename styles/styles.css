@@ -9,9 +9,9 @@ body {
 .title {
   background-color: black;
   border-radius: 8px;
+  margin: 0 auto;
   margin-bottom: 36px;
   width: 85%;
-  margin: 0 auto;
   box-shadow: 4px 4px 7px 0px #333;
 }
 h1 {
@@ -71,7 +71,7 @@ button:focus {
 }
 .containerimg {
   margin: 12px;
-  box-shadow: 7px 7px 10px 0px #333;
+  box-shadow: 7px 7px 10px 0 #333;
 }
 .totalImages {
   margin-left: 20px;
@@ -90,13 +90,12 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
 }
 
 .divtext {
   color: black;
   background-color: #fff;
-  padding: 3px 6px 10px 6px;
+  padding: 3px 6px 10px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -104,7 +103,7 @@ p {
   display: block;
   margin-block-start: 6px;
   margin-block-end: 10px;
-  margin-inline-start: 0px;
+  margin-inline-start: 0;
 }
 .light {
   font-family: Arial, Helvetica, sans-serif;
