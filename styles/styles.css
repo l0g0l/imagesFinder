@@ -65,9 +65,13 @@ button:focus {
 }
 .alert {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   text-align: center;
+}
+.containerimg {
+  margin: 12px;
+  box-shadow: 7px 7px 10px 0px #333;
 }
 .totalImages {
   margin-left: 20px;
@@ -82,14 +86,11 @@ button:focus {
   width: 148px;
   height: 95px;
 }
-.containerimg {
-  margin: 12px;
-  box-shadow: 7px 7px 10px 0px #333;
-}
 .result-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+ 
 }
 
 .divtext {
@@ -139,10 +140,10 @@ p {
 @media (min-width: 768px) and (max-width: 1024px) {
   .inputsearch {
     width: 372px;
-    margin-left: 86px;
+    margin-left: 60px;
   }
   .totalImages {
-    margin-left: 86px;
+    margin-left: 65px;
   }
 }
 
@@ -153,6 +154,6 @@ p {
     margin-left: 100px;
   }
   .totalImages {
-    margin-left: 100px;
+    margin-left: 105px;
   }
 }

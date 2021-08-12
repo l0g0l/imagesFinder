@@ -15,7 +15,7 @@ window.onload = () => {
     form.addEventListener('submit', validationForm)
 
     //llamando a la función aquí lo que hago es que nada más cargar la página se muestren las imágenes de la categoría que le pase por parámetro
-    searchImages('nature')
+    searchImages()
 
 }
 
@@ -30,7 +30,7 @@ function validationForm(e) {
 
     // validamos que, si el input está vacío, muestre una alerta  
     if (wordSearch === '') {
-        showAlert('Enter a search term');
+        showAlert('Error! Enter a search term');
         return;
     }
 
@@ -47,15 +47,15 @@ function showAlert(message) {
     // le ponemos el if para indicar que, si no existe alerta, porque si no metes en un if, crear tantas alertas como veces le des al botón  de search
 
     if (!alertExist) {
-        const alert = document.createElement('div');
+        const alert = document.createElement('div')
         alert.classList.add('alert')
         alert.setAttribute("role", "alert")
-
-
+        
         alert.innerHTML = `
-            <strong class="span">Error! ${message}</strong>
+            <strong class="span">${message}</strong>
         `;
-        form.appendChild(alert);
+        const show = document.querySelector('.containerform')
+        show.appendChild(alert);
 
         setTimeout(() => {
             alert.remove()

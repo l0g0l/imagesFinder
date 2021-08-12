@@ -1,4 +1,4 @@
-# New Document<!-- PROJECT LOGO -->
+<!-- PROJECT LOGO -->
 <br />
 <p align="center">
 <h4 align="center">Images Finder</h4>
@@ -40,69 +40,45 @@ npm i react-router-dom
 React Router is a collection of navigational components that compose declaratively with your application. Whether you want to have bookmarkable URLs for your web app or a composable way to navigate in React Native, React Router works wherever React is rendering--so take your pick!  
 
 
-### [Sass](https://sass-lang.com/)
-
-npm i sass
-
-Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient.
-
-### [React-validation](https://www.npmjs.com/package/react-validation)
-
-npm i react-validation
-
-Component to provide simple form validation for React components. It uses the Controlled Components approach for validation.
-
-It is not easy to validate forms with React. The reason is a one-way data flow style. In this case we can't affect forms from the inputs in an easy way. React-validation provides several components which are 'connected' to the form via the input's method attached by the Form component.
-
-### [Validator](https://www.npmjs.com/package/validator)
-
-npm i validator
-
-This library validates and sanitizes strings only.
-
-If you're not sure if your input is a string, coerce it using input + ''. Passing anything other than a string will result in an error.  
-
 ### Prerequisites
 
-- [Node](https://nodejs.org/en/): 10.16.0 or more  
-- [React js](https://es.reactjs.org/)
+
 - Clone the repository on your local machine (https://github.com/l0g0l/buscadorRepos_FrontEnd.git)
 
 ## Installation
 
-###### Frontend
+
 
 ```sh
-`cd buscadorRepos_FrontEnd` go into the folder
+cd imagesFinder go into the folder
 ```
 
-Install dependecies and devDependencies
 
 ```sh
-npm i
+To open the HTMl file in the browser you have several options:
+
+1- You look for the HTML file you want to view, right click on it and choose Open with from the menu. You will see a complete list of applications that you can use to run the file. The default browser will be at the top of the list.
+You select Google Chrome from the list and see your file in the browser.
+
+2-Drag and drop the HTML file directly into a new tab. Chrome will automatically open the page
+
 ```
 
-Enter the following command
 
-```sh
-npm start
-```
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-Creation of a GitHub repository finder
+Creation of a Images finder
 
 
 ### Requirements  
 
--Develop the front end of the app with React.  
-
--The application must be SPA (single page application), so that there is no page reloading at any time, and only the minimum necessary content is loaded and rendered with each endpoint change.  
-
--Save log data in the localstorage.  
-
+-Develop a web aplication with HTML, CSS and JavaScript.  
+-Request API Pixabay.
+-Responsive to Desktop, Tablet and Mobile.
+-Deploy
 -Version control management with GiT.
 
 
@@ -133,19 +109,13 @@ The project is deployed in [Heroku](https://www.heroku.com/)
 <br>
 
 <p align="left">
-    <a href="https://sass-lang.com/" target="_blank"> 
-        <img src="https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg" alt="SASS" width="40" height="40"/>
-    </a> 
+ <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
     <a href="https://www.w3schools.com/css/" target="_blank"> 
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
     </a> 
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
     </a>
-    <a href="https://www.mongodb.com/" target="_blank"> 
-    <a href="https://reactjs.org/" target="_blank">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
-    </a>  
     <a href="https://git-scm.com/" target="_blank">
         <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
     </a>
