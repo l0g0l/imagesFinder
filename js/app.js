@@ -65,24 +65,28 @@ function showAlert(message) {
 
 
 // llamamos a la API 
-function searchImages(word) {
+async function searchImages(word) {
 
     const key = '22854173-b9a58ddc094b31ac018df9dda';
     // a la url le pasamos la key, lo que el ususario ha metido en el input, las imagenes por pagina y el comienzo de la paginación
     const url = `https://pixabay.com/api/?key=${key}&q=${word}&per_page=${docsPerPage}&page=${actualPage}`;
 
-    fetch(url)
-        .then(response => response.json())
-        .then(result => {
-            console.log(result);
-            // calulamos el nº de páginas que tiene que mostrar
-            totalPages = calculatePages(result.totalHits)
-            totalPages2 = result.totalHits // muestra todas las imágenes que hay de la búsquedapor el input
-            console.log(totalPages);
+        try {
+            const response = await fetch(url); // este await bloquea al siguiente hasta que se obtenga la respuesta del fetch
+            const result = await response.json(); // este await bloquea a la siguiente línea hasta que se haya cumplido el primer await y por tanto se hacha cumplido este transformando los datos a json()
 
-            showImages(result.hits, result.totalHits);
+             // calculamos el nº de páginas que tiene que mostrar
+             totalPages = calculatePages(result.totalHits)
+             totalPages2 = result.totalHits // muestra todas las imágenes que hay de la búsquedapor el input
+             console.log(totalPages);
 
-        })
+             showImages(result.hits, result.totalHits);
+
+
+        }catch (error){
+            console.log(error);
+            
+        }
 }
 
 // Creamos un GENERADOR (se pone el asterisco antes del nombre de la función) que va a calcular la cantidad de elementos de acuerdo a la páginas que haya. Iterará todos los docs hasta llegar al final
